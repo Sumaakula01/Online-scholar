@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/contactus-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+      <!--Header-->
+        <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo" href="home.html">THINKER MIND</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contactus.html">Contact</a></li>
+        </ul>
+        </nav>
+    
+    <!-- ICONS whishlist,cart,profile-->
+    <section style="padding-top: 1.5em; padding-bottom: 1.5em;">
+        <div class="icon">
+            <button style="width: 25px; height: 25px;" type="button" class="iconButton">
+                <i class="far fa-heart"></i>
+            </button>
+            <button style="width: 25px; height: 25px;" type="button" class="iconButton">
+                <i class="fas fa-shopping-bag"></i>
+            </button>
+            <button style="width: 25px; height: 25px;" type="button" class="iconButton">
+                <i class="far fa-user"></i>
+            </button>
+        </div>
+    </section>
+    <main>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+              <h3>Quick Contact</h3>
+              <h4>Contact us today, and get reply with in 24 hours!</h4>
+              <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="allFooter">
+            <h3>THINKER MIND</h3>
+            <p> A better learning future starts here. </p>
+            
+            <section style="padding-top: 1.5em; padding-bottom: 1.5em;">
+                <div class="iconSocial">
+                    <button style="width: 25px; height: 25px; " type="button" class="iconButton">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button style="width: 25px; height: 25px;" type="button" class="iconButton">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button style="width: 25px; height: 25px;" type="button" class="iconButton">
+                        <i class="fab fa-google-plus"></i>
+                    </button>
+                    <button style="width: 25px; height: 25px;" type="button" class="iconButton">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                </div>
+            </section>
+            <div >
+                <p>Copyright &copy;2020 ThinkerMind designed by "Madhav"</p>
+            </div>
+        </div>
+        
+
+    </footer>
+  </body>
+</html>
