@@ -323,9 +323,7 @@ footer a:hover {
 }
 
 .footer-col-1,
-.footer-col-2,
-.footer-col-3,
-.footer-col-4 {
+.footer-col-2 {
     min-width: 25rem;
     margin-bottom: 3rem;
 }
