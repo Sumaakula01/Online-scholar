@@ -1,44 +1,81 @@
-footer{
-    padding-top:10px;
-    margin-top: 20px;
-    color:white;
-    background-color: black;
-    text-align: center;
-}
-.footer-notes{
-  padding-right: 20px;
+footer {
+  padding: 6rem 0 2rem;
+  background-color: #cf5423c0;
 }
 
-table{
-  margin-left: auto;
-  margin-right: auto;
-} 
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+footer h4 {
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
 }
-    
-.fa:hover {
-  opacity: 0.7;
+
+footer p,
+footer a {
+  font-size: 1.7rem;
+  color: #111;
 }
-    
-.fa-facebook {
-  color: white;
+
+footer a {
+  display: inline-block;
+  margin-bottom: 1.7rem;
+  transition: color .3s;
 }
-      
-.fa-twitter {
-  color: white;
+
+footer a:hover {
+  color: var(--primary-color);
 }
-.fa-instagram {
-  color: white;
+
+.footer-col-1,
+.footer-col-2 {
+  min-width: 25rem;
+  margin-bottom: 3rem;
 }
-.footer-notes{
-  margin: 0;
+
+footer img {
+  width: 18rem;
+  margin-bottom: 2rem;
 }
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-1 .logo {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.row {
+  align-items: flex-start;
+}
+.social_icons {
+  font-size: 1.9rem;
+}
+
+.social_link {
+  margin-right: 1.4rem;
+  transition: color .3s;
+}
+
+.social_link:hover {
+  color: var(--primary-color);
+}
+
+/* Brand */
+.brands {
+  margin: 10rem auto;
+}
+
+.col-5 {
+  width: 16rem;
+}
+
+.col-5 img {
+  width: 100%;
+}
+
+
+
 
 /* @media only screen and (min-width: 481px){
   /* tablet layout */

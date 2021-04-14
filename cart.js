@@ -71,12 +71,18 @@ function cartNumbers(product) {
 }
 
 function setItems(products) {
-    console.log("Inside of Setitems function");
-    console.log("My product is", product);
-    product.inCart = 1;
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+    console.log("My cartItems are", cartItems);
 
-    let cartItems = {
-        [product.tag]: product
+    if(cartItems != null) {
+        cartItems[product.tag].incart +=1;
+
+    } else {
+        product.inCart = 1;
+        cartItems = {
+          [product.tag]: product
+        }
     }
 
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
