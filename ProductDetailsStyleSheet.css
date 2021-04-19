@@ -1,0 +1,18 @@
+﻿body {
+}
+.row {
+    width:100%;
+    display:inline;
+}
+.main_image {
+    width: 30%;
+    margin-left: 10%;
+    text-align: left;
+    float: left;
+}
+.main_details {
+    width: 55%;
+    margin-right: 5%;
+    text-align: right;
+    float: left;
+}
