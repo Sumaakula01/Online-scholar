@@ -1,0 +1,453 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TheGwatmey";
+    src: url('textfonts/TheGwathmey.woff') format('woff');
+}
+
+@font-face {
+    font-family: "EBGaramondItalic";
+    src: url('textfonts/EBGaramond-Italic.woff') format('woff');
+}
+
+html {
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #1d1d1d;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.3rem;
+    color: #1d1d1d;
+    margin: .8rem 0;
+}
+
+.container,
+.small-container,
+.medium-container {
+    width: 100%;
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+/* HEADER */
+
+.navbar .logo {
+    font-size: 2.8rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    height: 7rem;
+}
+
+.nav-list {
+    display: flex;
+}
+
+    .nav-list li:not(:last-child) {
+        margin-right: 5rem;
+    }
+
+.navbar a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.navbar a {
+    transition: opacity .3s;
+}
+
+    .navbar a:hover {
+        opacity: .6;
+    }
+
+.navbar div svg:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.menu-toggle {
+    font-size: 2.2rem;
+    color: #ddd;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 30rem;
+}
+
+    .col-2 img, img {
+        max-width: 100%;
+        text-align: center;
+    }
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin: 2rem 0;
+}
+
+.navbar svg {
+    cursor: pointer;
+}
+
+
+/* Intro Section*/
+.headingIntro {
+    background-color: #cf5423c0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headingIntro-info {
+    flex-basis: 90%;
+    align-self: flex-start;
+    padding: 12rem 12rem;
+    min-width: 30rem;
+}
+
+.learning {
+    font-size: 5rem;
+    color: #2c2b2bc0;
+    font-family: "TheGwatmey";
+    font-weight: normal;
+}
+
+.btn {
+    display: inline-block;
+    border: .1rem solid #4c4c43;
+    padding: 1.2rem 2.2rem;
+    margin-top: 1.5rem;
+    font-size: 1.9rem;
+    font-family: "EBGaramondItalic";
+    transition: all .3s;
+}
+
+    .btn:hover {
+        background-color: #4c4c43;
+        color: #f2f0f1;
+    }
+
+
+/* Products */
+.products h2 {
+    margin: 0;
+    margin: 1.5rem 0 7rem;
+}
+
+.title {
+    text-align: center;
+    margin: 15rem auto 7rem;
+    line-height: 1.8;
+    position: relative;
+}
+
+    .title::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        height: .5rem;
+        width: 10rem;
+        background-color: #cf5423c0;
+        border-radius: .5rem;
+    }
+
+.medium-container {
+    max-width: 120rem;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 20rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    transition: transform .5s;
+}
+
+    .col-4 img {
+        width: 100%;
+    }
+
+    .col-4 p {
+        font-size: 1.4rem;
+        margin: .5rem 0;
+    }
+
+    .col-4:hover {
+        transform: translateY(-.5rem);
+    }
+
+.rating .fas {
+    color: #111111;
+    font-size: 1.4rem;
+}
+
+.courseImage {
+    width: 200px;
+    height: 300px;
+}
+
+/*.fas {
+    font-size: 3.4rem;
+    color: #2e2b2c;
+}*/
+
+/*Review*/
+.small-container {
+    max-width: 100rem;
+}
+
+.testimonials {
+    padding-top: 10rem;
+}
+
+    .testimonials .col-3 {
+        text-align: center;
+        padding: 4rem 2rem;
+        box-shadow: 0 0 2rem 0px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+
+        .testimonials .col-3:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonials .col-3 img {
+            width: 5rem;
+            margin-top: 2rem;
+            border-radius: 50%;
+        }
+
+.fas.fa-quote-left {
+    font-size: 3.4rem;
+    color: #2e2b2c;
+}
+
+.col-3 p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1.2rem 0;
+    color: #777;
+}
+
+.testimonials .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 25rem;
+    margin-bottom: 3rem;
+}
+
+    .col-3 img {
+        width: 100%;
+    }
+
+/* FOOTER */
+
+
+footer {
+    padding: 6rem 0 2rem;
+    background-color: #cf5423c0;
+}
+
+    footer h4 {
+        font-size: 1.8rem;
+        margin-bottom: 2.2rem;
+    }
+
+    footer p,
+    footer a {
+        font-size: 1.7rem;
+        color: #111;
+    }
+
+    footer a {
+        display: inline-block;
+        margin-bottom: 1.7rem;
+        transition: color .3s;
+    }
+
+        footer a:hover {
+            color: var(--primary-color);
+        }
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 25rem;
+    margin-bottom: 3rem;
+}
+
+footer img {
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+    .footer-col-1 .logo {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+
+.row {
+    align-items: flex-start;
+}
+
+.social_icons {
+    font-size: 1.9rem;
+}
+
+.social_link {
+    margin-right: 1.4rem;
+    transition: color .3s;
+}
+
+    .social_link:hover {
+        color: var(--primary-color);
+    }
+
+/* Brand */
+.brands {
+    margin: 10rem auto;
+}
+
+.col-5 {
+    width: 16rem;
+}
+
+    .col-5 img {
+        width: 100%;
+    }
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+    .navbar a {
+        color: #e3ebf0;
+    }
+
+    .navbar svg {
+        display: none;
+    }
+
+    .logo {
+        color: var(--primary-color) !important;
+    }
+
+    .nav-list {
+        background-color: #4c4c43;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform .5s;
+        z-index: 100;
+    }
+
+        .nav-list li:not(:last-child) {
+            margin-right: 0;
+        }
+
+        .nav-list li {
+            margin: 3.5rem 0;
+        }
+
+        .nav-list.show {
+            transform: translateY(0);
+        }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .fa-bars {
+        color: var(--primary-color);
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    .menu-toggle.show .fa-bars {
+        display: none;
+    }
+
+    .menu-toggle.show .fa-times {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+}
