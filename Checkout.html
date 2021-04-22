@@ -46,7 +46,7 @@
               <div class="row">
                 <div class="col-50">
                   <fieldset>
-                  <h3>Billing Address</h3>
+                  <h3><b> Billing Address</b></h3><br>
                   <label for="name">Full Name</label>
                   <input type="name" id="name" name="name" placeholder="enter full name" required><br><br>
                   
@@ -65,11 +65,10 @@
                     <div class="col-50">
                       <label for="state">State</label>
                       <input type="stste" id="state" name="state" placeholder="enter State" required><br><br>
-                    </div>
-                    <div class="col-50">
                       <label for="zip">Zip</label>
                       <input type="Zip" id="zip" name="zip" placeholder="enter Zip" required><br>
                     </div>
+                   
                   
                   </div>
                   </fieldset>
@@ -77,7 +76,7 @@
                 <div class="col-50"><br>
                 
                   <fieldset>
-                    <h3>Payment</h3>
+                    <h3><b>Payment</b></h3><br>
                     <label for="fname">Accepted Cards</label>
                     <a href="">
                       <img class="courseImage"src="img/courses/Card.jpg">
@@ -85,7 +84,16 @@
                       <div class="rating">
                           <i class="fas fa-star"></i>
                       </div>
-                    </a>                                                    
+                    </a> 
+                    <div>
+                      <p>Options:<input type="radio" name="options" value="MasterCard">MasterCard
+                          <input type="radio" name="options" value="American Express">American Express
+                          <input type="radio" name="options" value="Discover">Discover
+                          <input type="radio" name="options" value="Visa">Visa
+                      </p>
+                  </div><br>
+
+                    
                     <label for="cname">Name on Card</label>
                     <input type="name" id="cname" name="cardname" placeholder="name on card" required><br><br>
 
@@ -93,47 +101,30 @@
                     <input type="num" id="ccnum" name="cardnumber" placeholder="enter card number" required pattern="\d{4}[\-]\d{4}[\-]\d{4}[\-]\d{4}" title="Must be 1111-2222-3333-4444"><br><br>
 
                     <label for="expmonth">Exp Month</label>
-                    <input type="num" id="expmonth" name="expmonth" placeholder="month" required pattern="\d{2}" title="Must be 00"><br>
+                    <input type="num" id="expmonth" name="expmonth" placeholder="month" required pattern="\d{2}" title="Must be 00"><br><br>
         
                     <div class="row">
                       <div class="col-50">
                         <label for="expyear">Exp Year</label>
-                        <input type="num" id="expyear" name="expyear" placeholder="year" required pattern="\d{2}" title="Must be 00"><br>
-                      </div>
-                      <div class="col-50">
-                        <label for="cvv">CVV</label>
+                        <input type="num" id="expyear" name="expyear" placeholder="year" required pattern="\d{2}" title="Must be 00"><br><br>
+                        <label for="CVV">CVV</label>
                         <input type="cvv" id="cvv" name="cvv" placeholder="cvv" required pattern="\d{3}" title="Must be 000"><br>
                       </div>
+                      
                     </div>
                     </fieldset>
                   </div>
                 
         
                 </div>
-                <label>
-                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+               
                 </label>
                 <input type="submit" id="join list" value="Continue to checkout" class="btn"><br>
               </form>
             </div>
           </div>
         
-          <div class="col-25">
-            <div class="container">
-              <h4>Cart
-                <span class="price" style="color:black">
-                  <i class="fa fa-shopping-cart"></i>
-                  <b>4</b>
-                </span>
-              </h4>
-              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-              <hr>
-              <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-            </div>
-          </div>
+         
         </div>
            <!-- FOOTER SECTION -->
     <footer>
