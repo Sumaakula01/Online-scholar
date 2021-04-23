@@ -1,0 +1,196 @@
+body {
+
+    background-image: url("signup.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signupbox {
+
+    max-width: 350px;
+    border-radius: 20px;
+    margin:auto;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 40px;
+    color:#fff;
+    margin-top: 80px;
+}
+h1 {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+h2 {
+
+    text-align: center;
+}
+input[type=text] ,input[type=password], input[type=email] {
+ 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0,0.10);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin:5px;
+    font-weight: bold;
+
+
+}
+input[type=submit] {
+    
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #60adde;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color:#fff;
+}
+
+input[type=submit]:hover {
+
+    background: #003366;
+    opacity:0.7;
+
+}
+
+#d1
+{
+    background-color: rgb(124, 193, 66)   ;
+    z-index: 999;
+    position: relative;
+    width: 1520px;
+    height: 200px;
+    top: 20px;
+
+}
+#img
+{
+    float: left;
+   
+}
+#d2
+{
+    top: 40px;
+   left: 1150px;
+   position: absolute;
+   font-size: 56px;
+   font-family: fantasy;
+   
+}
+#links
+{
+    text-align: center;
+    text-decoration: none;
+   top: 78px;
+   left: 528px;
+   position: absolute;
+   font-size: 30px;
+}
+#lc
+{
+    text-decoration: none;
+}
+#lc:hover
+{
+    color: red;
+    font-size: 40px;
+}
+#bgimg
+{
+    top: 250px;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+#text
+{
+    top: 70px;
+    font-size: 40px;
+    position: absolute;
+    color: forestgreen;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 40%;
+    margin-right: 25%;
+    border: 0px solid red;
+    background: rgba(90,150,0,0.2);
+    border-radius: 30px;
+}
+#table
+{
+    margin-top: 252px;
+    top: 400px;
+}
+.name1
+{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.name2
+{
+    font-size: 30px;
+    text-align: center;
+}
+.tabcontent
+{
+    margin-top: 165px;
+}
+#startbooking
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.booktext
+{
+    color: blueviolet;
+    font-size: 100px;
+    text-decoration: none;
+}
+#footer
+{
+    width: 100%;
+    height: 100px;
+    background: #c2c2bb;
+    color: white;
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.footertext
+{
+    font-size: 40px;
+}
+#booking
+{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+#great
+{
+    font-size: 45px;
+    position: absolute;
+    top: 20px;
+    color: red;
+    margin-left: 22%;
+}
+td
+{
+    font-family: cursive;
+}

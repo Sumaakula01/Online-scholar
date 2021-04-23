@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="Master.css" rel="stylesheet" />
+    <link href="ProductPage.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="index.html">Online Scholar</a>
+                <ul class="nav-list">
+                    <li style="list-style-type:none;"><a href="home.html">Home</a></li>
+                    <li style="list-style-type:none;"><a href="login.html">Account</a></li>
+                    <li style="list-style-type:none;"><a href="about.html">About</a></li>
+                    <li style="list-style-type:none;"><a href="contactus.html">Contact</a></li>
+                </ul>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <form id="form1">
+            <div>
+                <div style="background-color:antiquewhite;">
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="width: 40%; padding-left: 15%; align-items: center" colspan="6">
+                                <div class="slideshow-container">
+                                    <div class="mySlides">
+                                        <img id="idBook1" src="Images/java1.jpg" alt="Book1" data-val="Images/java1.jpg" onclick="loadPopup(this);" style="height: 350px; width: 250px" />
+                                    </div>
+                                    <div class="mySlides">
+                                        <img id="idBook2" src="Images/j1.jpg" alt="Book2" data-val="Images/j1.jpg" onclick="loadPopup(this);" style="height: 350px; width: 250px" />
+                                    </div>
+                                    <div class="mySlides">
+                                        <img id="idBook3" src="Images/j2.jpg" alt="Book3" data-val="Images/j2.jpg" onclick="loadPopup(this);" style="height: 350px; width: 250px" />
+                                    </div>
+                                    <div class="mySlides">
+                                        <img id="idBook4" src="Images/j3.jpg" alt="Book4" data-val="Images/j3.jpg" onclick="loadPopup(this);" style="height: 350px; width: 250px" />
+                                    </div>
+                                    <div class="mySlides">
+                                        <img id="idBook5" src="Images/j4.png" alt="Book5" data-val="Images/j4.png" onclick="loadPopup(this);" style="height: 350px; width: 250px" />
+                                    </div>
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </td>
+                            <td style="width: 60%;padding-top:100px">
+                                <div>
+                                    <div class="product-information" style="padding-left:7%">
+                                        <h1>Java In-Depth: Become a Complete Java Engineer!</h1>
+                                        <h4>Comprehensive Java programming course integrated with design principles, best practices & instructor-led Java EE project</h4>
+                                        <h1><b>CA$ 199.99</b></h1>
+                                        <h4>67 hours</h4>
+                                        <p>
+                                            <img src="Images/reviewstar3.png" style="height: 20px; width: 100px" />(30000 ratings)
+                                        </p>
+                                        <h4>Created by Eric </h4>
+                                    </div>
+                                    <br />
+                                    <div>
+                                        <p>
+                                            <span style="padding-left:2%">
+                                                <img id="btnenquiry" class="btn btn-warning pull-right" src="Images/ATC1.png" style="height: 100px; width: 250px;border:hidden;" onclick="AddToCart()" />
+                                            </span>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%"></td>
+                            <td style="width: 5%">
+                                <div>
+                                    <img id="idBook6" src="Images/java1.jpg" data-val="Images/java1.jpg" alt="Book1" onclick="loadimg(this);" class="imgsize" />
+                                </div>
+                            </td>
+                            <td style="width: 5%">
+                                <div>
+                                    <img id="idBook7" src="Images/j1.jpg" data-val="Images/j1.jpg" alt="Book2" onclick="loadimg(this);" class="imgsize" />
+                                </div>
+                            </td>
+                            <td style="width: 5%">
+                                <div>
+                                    <img id="idBook8" src="Images/j2.jpg" data-val="Images/j2.jpg" alt="Book3" onclick="loadimg(this);" class="imgsize" />
+                                </div>
+                            </td>
+                            <td style="width: 5%">
+                                <div>
+                                    <img id="idBook9" src="Images/j3.jpg" data-val="Images/j3.jpg" alt="Book4" onclick="loadimg(this);" class="imgsize" />
+                                </div>
+                            </td>
+                            <td style="width: 5%">
+                                <div>
+                                    <img id="idBook10" src="Images/j4.png" data-val="Images/j4.png" alt="Book6" onclick="loadimg(this);" class="imgsize" />
+                                </div>
+                            </td>
+                            <td style="width: 40%"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="div-sub">
+                    <h3 style="font-size:x-large;"><span style="padding-left:1%"><a href="" style="color:black" id="idMoreDetails" onclick="fnMoreDetails()"><b>More Details..</b></a></span></h3>
+                    <br /><br />
+                    <div id="divMoreDetails" class="row course">
+
+                        <div class="column">
+                            <h3 style="font-size:x-large;">You will become master of</h3><br />
+                            <ul style="font-size:medium;">
+                                <li>Develop solutions using data types, I/O, control structures, methods and objects</li>
+                                <li>Work with arrays, reference types, inheritance, polymorphism, packages,<br /> GUI applications and recursion</li>
+                                <li>Document solutions with javadoc comments.</li>
+                                <li>Object-oriented designs</li>
+                                <li>Classes, instance variables and methods and constructors</li>
+                                <li>Arrays</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3 style="font-size:x-large;">Course pattern</h3><br />
+                            <ul style="font-size:medium;">
+                                <li>67 hours on-demand video</li>
+                                <li>20 coding sessions</li>
+                                <li>Full time access</li>
+                                <li>Course Completion Certificate</li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+                            <p style="padding-left:7%">
+                                <br /><iframe width="260" height="215" src="https://www.youtube.com/embed/Qgl81fPcLc8"
+                                              title="YouTube video player" frameborder="0"
+                                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" "></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background-color:white;">
+                    <table>
+                        <tr>
+                            <td style="width: 10%"></td>
+
+                            <td style="width: 40%"></td>
+                        </tr>
+                        <tr><td colspan="7"></td><td></td></tr>
+                        <tr>
+                            <td width="30%" colspan="6" style="font-size:20px;padding-left:9%;margin-top:0px">
+                                <p><b>Review Summary</b></p>
+                                <img src="Images/ReviewStar.png" style="height: 20px; width: 25%" />
+                                <span style="font-size:small">3.5 out of 5 stars</span>
+                                <img src="Images/ReviewSummary.png" style="height: 100px; width: 65%" />
+                            </td>
+                            <td width="70%" style="padding-left:2%;">
+                                <p style="font-size:large;"><b>Customer reviews</b></p><p>
+                                    <br />
+                                    <span style="font-size:small;">
+                                        <img src="Images/People.jpg" style="height: 20px; width: 20px" />&nbsp;Joann<br />
+                                        <img src="Images/unnamed1.jpg" style="height: 20px; width: 100px" /> Detailed course , explained everything
+                                        <br />
+                                        <img src="Images/People.jpg" style="height: 20px; width: 20px" />&nbsp;Jimmy S.<br />
+                                        <img src="Images/ReviewStar.png" style="height: 20px; width: 100px" /> Absolute capsule for programmers.
+                                        <br />
+                                        <img src="Images/People.jpg" style="height: 20px; width: 20px" />&nbsp;Binny<br />
+                                        <img src="Images/unnamed1.jpg" style="height: 20px; width: 100px" /> Explained in very simple manner and easy to understand.
+                                        <br />
+                                        <img src="Images/People.jpg" style="height: 20px; width: 20px" />&nbsp;Timos<br />
+                                        <img src="Images/ReviewStar.png" style="height: 20px; width: 100px" /> Practical sessions are really helpful.<br />
+                                        <br />
+                                        <img src="Images/People.jpg" style="height: 20px; width: 20px" />&nbsp;Payal<br />
+                                        <img src="Images/ReviewStar.png" style="height: 20px; width: 100px" /> I gained more knowledge and confidence now.
+                                    </span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <a class="logo" href="index.html">Online Scholar</a>
+                    <p>A better learning future starts here.</p>
+                </div>
+
+                <div class="footer-col-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li style="list-style-type:none;"><a href="#">Facebook</a></li>
+                        <li style="list-style-type:none;"><a href="#">Twitter</a></li>
+                        <li style="list-style-type:none;"><a href="#">Instgram</a></li>
+                        <li style="list-style-type:none;"><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        function loadPopup(input) {
+            $("#myModal").modal('show');
+            var img = $(input).attr('src');
+            $("#zoom_01").attr("src", img);
+            var fileimg = $(input).attr('data-val');
+            var viewimg = "/Images/" + fileimg;
+            $('.large').css('background-image', 'url(' + viewimg + ')');
+        }
+        function loadimg(input) {
+            debugger;
+            var img = $(input).attr('src');
+            var fileImg = $(input).attr('data-val');
+            var viewimg = fileImg;
+            $("#idBook1").attr("src", fileImg);
+            $("#idBook1").attr("data-val", fileImg);
+        }
+        function fnMoreDetails() {
+            var x = document.getElementById("divMoreDetails");
+
+
+
+        }
+        function AddToCart() {
+            window.location.replace("shoppingcart.html");
+        }
+    </script>
+    <script>
+        var slideId = 1;
+        moveSlides(slideId);
+
+        function plusSlides(n) {
+            moveSlides(slideId += n);
+        }
+
+        function currentSlide(n) {
+            moveSlides(slideId = n);
+        }
+
+        function moveSlides(n) {
+            var i;
+            var images = document.getElementsByClassName("mySlides");
+            if (n > images.length) { slideId = 1 }
+            if (n < 1) { slideId = images.length }
+            for (i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            images[slideId - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
