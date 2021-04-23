@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Scholar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="Checkout.css" type="text/css"> 
+    <link rel="stylesheet" href="parvathy_code/home_style.css" type="text/css">
+    
+</head>
+<body>
+   <!-- HEADER -->
+
+   <header>
+    <div class="container">
+        <div class="navbar">
+            <a class="logo" href="index.html">Online Scholar</a>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+    
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="success.html" >
+  
+              
+      
+              <div class="row">
+                <div class="col-50">
+                  <fieldset>
+                  <h3><b> Billing Address</b></h3><br>
+                  <label for="name">Full Name</label>
+                  <input type="name" id="name" name="name" placeholder="enter full name" required><br><br>
+                  
+                  <label for="email address">Email Address</label>
+                  <input type="email" id="email address" name="email address" placeholder="enter valid email address" required autofocus autocomplete="off" ><br><br>
+                  
+
+                  <label for="address"> Address</label>
+                  <input type="address" id="address" name="address" placeholder="enter address" required><br><br>
+                
+
+                  <label for="city"> City</label>
+                  <input type="city" id="city" name="city" placeholder="enter city"><br><br>
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="stste" id="state" name="state" placeholder="enter State" required><br><br>
+                      <label for="zip">Zip</label>
+                      <input type="Zip" id="zip" name="zip" placeholder="enter Zip" required><br>
+                    </div>
+                   
+                  
+                  </div>
+                  </fieldset>
+                </div>
+                <div class="col-50"><br>
+                
+                  <fieldset>
+                    <h3><b>Payment</b></h3><br>
+                    <label for="fname">Accepted Cards</label>
+                    <a href="">
+                      <img class="courseImage"src="img/courses/Card.jpg">
+                      
+                      <div class="rating">
+                          <i class="fas fa-star"></i>
+                      </div>
+                    </a> 
+                    <div>
+                      <p>Options:<input type="radio" name="options" value="MasterCard">MasterCard
+                          <input type="radio" name="options" value="American Express">American Express
+                          <input type="radio" name="options" value="Discover">Discover
+                          <input type="radio" name="options" value="Visa">Visa
+                      </p>
+                  </div><br>
+
+                    
+                    <label for="cname">Name on Card</label>
+                    <input type="name" id="cname" name="cardname" placeholder="name on card" required><br><br>
+
+                    <label for="ccnum">Credit card number</label>
+                    <input type="num" id="ccnum" name="cardnumber" placeholder="enter card number" required pattern="\d{4}[\-]\d{4}[\-]\d{4}[\-]\d{4}" title="Must be 1111-2222-3333-4444"><br><br>
+
+                    <label for="expmonth">Exp Month</label>
+                    <input type="num" id="expmonth" name="expmonth" placeholder="month" required pattern="\d{2}" title="Must be 00"><br><br>
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="num" id="expyear" name="expyear" placeholder="year" required pattern="\d{2}" title="Must be 00"><br><br>
+                        <label for="CVV">CVV</label>
+                        <input type="cvv" id="cvv" name="cvv" placeholder="cvv" required pattern="\d{3}" title="Must be 000"><br>
+                      </div>
+                      
+                    </div>
+                    </fieldset>
+                  </div>
+                
+        
+                </div>
+               
+                </label>
+                <input type="submit" id="join list" value="Continue to checkout" class="btn"><br>
+              </form>
+            </div>
+          </div>
+        
+         
+        </div>
+           <!-- FOOTER SECTION -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <a class="logo" href="index.html">Online Scholar</a>
+                  <p>A better learning future starts here.</p>
+              </div>
+              
+              <div class="footer-col-4">
+                  <h4>Follow Us</h4>
+                  <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">Instgram</a></li>
+                      <li><a href="#">YouTube</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer> 
+    </body>
+    
+</html>
